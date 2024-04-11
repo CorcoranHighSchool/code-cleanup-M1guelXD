@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-    public GameObject enemyPrefab;
-    public GameObject powerupPrefab;
-    public float spawnRange = 9.0f;
-    public int waveNumber = 1;
-    public int enemyCount;
+    [SerilizeField] private GameObject enemyPrefab;
+    [SerilizeField] private GameObject powerupPrefab;
+    [SerilizeField] private float spawnRange = 9.0f;
+    [SerilizeField] private int waveNumber = 1;
+    [SerilizeField] private int enemyCount;
     // Start is called before the first frame update
     void Start()
     {
