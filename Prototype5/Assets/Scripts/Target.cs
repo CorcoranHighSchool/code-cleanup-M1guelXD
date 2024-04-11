@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour
@@ -13,6 +11,8 @@ public class Target : MonoBehaviour
     private GameManager gameManager;
     public int pointValue = 5;
     public ParticleSystem explosionParticle;
+    private const string gameManager = "GameManager";
+    private const string bad = "Bad";
     // Start is called before the first frame update
     void Start()
     {
@@ -43,11 +43,7 @@ public class Target : MonoBehaviour
     {
         return new Vector3(Random.Range(-xRange, xRange), ySpawn, 0.0f);
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     //player clicks
     private void OnMouseDown()
     {
